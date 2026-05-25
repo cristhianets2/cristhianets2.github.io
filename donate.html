@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Mod Development - Mods ETS2</title>
+	<meta name="description" content="Page for anyone who wants to contribute to the project.">
+	<meta name="keywords" content="ets2 mods, euro truck simulator 2, mods brasileiros, modding ets2, download de mod, cristhian cardoso ets2, donate">
+	<link rel="icon" type="image/png" href="imagens/favicon.png">
+    <style>
+        /* Base do estilo Steam que já usas no teu site */
+        body {
+            background-color: #1b2838; /* Azul escuro padrão Steam */
+            color: #c7d5e0; /* Texto cinza claro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+			
+        }
+
+        .donate-container {
+            background-color: #121a24; /* Fundo dos cards estilo Steam */
+            width: 100%;
+            max-width: 600px;
+            border-radius: 5px; /* Cantos arredondados como combinámos */
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #2a475e;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #acb2b8;
+        }
+
+        /* Área do QR Code e Chave Pix */
+        .qrcode-box {
+            background-color: #172030;
+            border: 1px solid #2a475e;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .qr-placeholder {
+            width: 200px;
+            height: 200px;
+            background-color: #ffffff;
+            margin: 0 auto 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Botões de Plataformas Alternativas (PayPal, Livepix, etc.) */
+        .btn-donate {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: background 0.2s;
+        }
+		
+		/* Botão específico do Buy Me a Coffee - Cor Padrão Amarela */
+        .btn-bmc {
+            background-color: #FFDD00;
+            color: #000000;
+            font-family: 'Cookie', cursive, Arial, sans-serif; /* Aproximação do estilo deles */
+        }
+
+        /* Botão específico do PayPal */
+        .btn-paypal {
+            background-color: #003087;
+            /*color: #003087;*/
+        }
+
+        .btn-donate:hover {
+            background: linear-gradient(to right, #5bc7ff, #2089d4);
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 25px;
+            color: #66c0f4;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .btn-back:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="donate-container">
+        <h1>Support Mod Development</h1>
+        <p>If you enjoy my mods for ETS 2 and would like to help keep the project going, please consider making a contribution of any amount! Every bit of support helps a lot.</p>
+        <div class="qrcode-box">
+		<h3>QR Code Paypal</h3>
+            <img src="imagens/qr_code_paypal.png" alt="QR Code Paypal for donate" class="qr-placeholder" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div style="display:none; color:#ffffff; margin-bottom:15px;">(If the QR code doesn't load, you can click the PayPal link below)</div>
+        </div>
+
+        <a href="https://buymeacoffee.com/cristhian_cardoso" target="_blank" class="btn-donate btn-bmc">
+            Buy Me a Coffee ☕
+		</a>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=E5XHG4F5DNPGJ" target="_blank" class="btn-donate btn-paypal">Donate via PayPal</a>
+
+        <br>
+        <a href="index.html" class="btn-back">← Back to the Mod Gallery</a>
+    </div>
+
+</body>
+</html>
