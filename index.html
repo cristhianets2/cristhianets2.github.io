@@ -199,6 +199,46 @@
             .sidebar-banner {
                 display: none;
             }
+					main {
+                margin-bottom: 0px !important;
+                padding-bottom: 0px !important;
+            }
+			
+			/* Força a galeria de mods a fechar o espaço vazio na última linha */
+            .mod-gallery {
+                grid-template-rows: auto;
+                gap: 15px; /* Mantém um espaço controlado entre os cards */
+                margin-bottom: 0px !important;
+                padding-bottom: 0px !important;
+            }
+			
+			.donation-nav {
+                display: flex;
+                flex-direction: column; /* Empilha tudo em uma linha por item */
+                align-items: center;    /* Centraliza os botões */
+                gap: 12px;              /* Espaçamento perfeito entre eles */
+                padding: 0px 10px 20px 10px !important; /* Topo zerado (0px) para encostar no card */
+                margin-top: 5px !important; /* Margem mínima controlada */
+            }
+
+            /* Forçamos os botões a esquecerem o posicionamento absoluto do desktop */
+            .donation-nav a {
+                display: block;
+                width: 90%;             /* Não esmaga nas laterais da tela */
+                max-width: 340px;       /* Mantém um tamanho elegante */
+                text-align: center;
+                box-sizing: border-box;
+            }
+            /* Desativa a força do posicionamento absoluto do desktop */
+            .donation-nav a.btn-blog,
+            .donation-nav a.btn-contato {
+                position: static;
+            }
+            /* A logo ganha destaque isolada no topo do menu */
+            .footer-logo {
+                order: -1;              /* Força a logo a ir para o topo de tudo */
+                margin-bottom: 5px; 	/* Reduzido o espaço abaixo da logo */
+            }
         }
 		
     </style>
