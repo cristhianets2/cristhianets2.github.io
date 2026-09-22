@@ -1,1 +1,4 @@
-https://cristhianets2.github.io/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://cristhianets2.github.io/sitemap.xml
