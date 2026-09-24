@@ -183,12 +183,23 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 		
+		/* BANNER INFERIOR */
+        .bottom-banner {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+		
 		/* RESPONSIVIDADE: Some com os banners em telas menores (celulares/tablets) */
         @media (max-width: 1200px) {
             .sidebar-banner {
                 display: none;
             }
-					main {
+			.bottom-banner { /* ESCONDER BANNERS EM TELAS PEQUENAS (CELULAR) */
+                display: none;
+            }
+			main {
                 margin-bottom: 0px !important;
                 padding-bottom: 0px !important;
             }
@@ -377,6 +388,18 @@
 					<a href="reboque_agrale.html" class="btn-view">Ver Detalhes e Download</a>
 				</div>
 			</div>
+			<div class="bottom-banner">
+				<script>
+				atOptions = {
+				    'key' : 'cc2d895d972c9719b23f1468ae18df72',
+					'format' : 'iframe',
+					'height' : 50,
+					'width' : 320,
+					'params' : {}
+				};
+				</script>
+				<script src="https://www.highrevenueformat.com/cc2d895d972c9719b23f1468ae18df72/invoke.js"></script>
+			</div>
 			<nav class="donation-nav">
 				<a href="https://modding.scssoft.com/" target="_blank" class="btn-blog">🌐 Mod Wiki</a>
 			
@@ -393,7 +416,6 @@
 				<a href="contato.html" class="btn-contato">✉️ Contato</a>
 				
 			</nav>
-			
 			<a href="privacidade.html" style="color: #66c0f4; font-weight: bold; font-size: 14px; margin-top: 15px;">Política de Privacidade</a>
 		</main>	
 		<aside class="sidebar-banner">
